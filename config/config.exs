@@ -10,10 +10,11 @@ config :notification_bot,
 
 config :notification_bot,
        NotificationBot.Repo,
-       database: "notification_bot_repo",
-       username: "taras",
-       password: "taras",
-       hostname: "localhost"
+       database: "ab8d14bd-f939-4b4b-88bd-1e829bd4fdd6",
+       username: "ab8d14bd-f939-4b4b-88bd-1e829bd4fdd6-user",
+       password: "pw-7a678d97-c50f-4372-88e4-3b9aa8df93fd",
+       hostname: "postgres-free-tier-1.gigalixir.com",
+       port: 5432
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
