@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="302f0516-1429-4b91-83f5-501b782f8449" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/benchee.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/benchee_json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jason.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mariaex.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/notification_bot/car.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/notification_bot/filter.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/notification_bot/periodically.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/notification_bot/repo.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/notification_bot/user.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/car.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/notification_bot.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/notification_bot.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/notification_bot/bot.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/notification_bot/bot.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scraper.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scraper.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/notification_bot.iml" afterDir="false" />
-    </list>
+    <list default="true" id="302f0516-1429-4b91-83f5-501b782f8449" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/assets/node_modules/phoenix/" />
     <ignored path="$PROJECT_DIR$/assets/node_modules/phoenix_html/" />
     <ignored path="$PROJECT_DIR$/cover/" />
@@ -114,8 +94,8 @@
         <counts>
           <entry key="beam" value="2" />
           <entry key="cars" value="3" />
-          <entry key="ex" value="20" />
-          <entry key="exs" value="11" />
+          <entry key="ex" value="21" />
+          <entry key="exs" value="12" />
           <entry key="filters" value="2" />
           <entry key="iml" value="1" />
           <entry key="lock" value="1" />
@@ -127,8 +107,8 @@
         <counts>
           <entry key="BEAM" value="2" />
           <entry key="Database Element" value="6" />
-          <entry key="Elixir Script" value="11" />
-          <entry key="Elixir file" value="20" />
+          <entry key="Elixir Script" value="12" />
+          <entry key="Elixir file" value="21" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="1" />
@@ -136,7 +116,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ex" value="3363" />
+          <entry key="ex" value="3368" />
           <entry key="exs" value="348" />
           <entry key="iml" value="4" />
           <entry key="txt" value="24" />
@@ -145,7 +125,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Elixir Script" value="348" />
-          <entry key="Elixir file" value="3363" />
+          <entry key="Elixir file" value="3368" />
           <entry key="IDEA_MODULE" value="4" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
@@ -182,15 +162,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20190311110640_create_filters.exs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/notification_bot.ex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -208,7 +179,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="das://2bf30f3a-ba61-4708-8bd0-0d4c20800934/database/notification_bot_repo/schema/public/table/cars">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -218,10 +189,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/notification_bot/user.ex">
+        <entry file="file://$PROJECT_DIR$/lib/notification_bot/repo.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -238,8 +209,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/notification_bot/periodically.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="53" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="53" />
+            <state relative-caret-position="304">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20190311110640_create_filters.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -283,8 +263,8 @@
         <option value="$PROJECT_DIR$/priv/repo/migrations/20190311110640_create_filters.exs" />
         <option value="$PROJECT_DIR$/lib/notification_bot/car.ex" />
         <option value="$PROJECT_DIR$/priv/repo/migrations/20190311110810_create_cars.exs" />
-        <option value="$PROJECT_DIR$/lib/notification_bot/periodically.ex" />
         <option value="$PROJECT_DIR$/lib/scraper.ex" />
+        <option value="$PROJECT_DIR$/lib/notification_bot/periodically.ex" />
       </list>
     </option>
   </component>
@@ -414,16 +394,15 @@
       <workItem from="1551971017275" duration="167000" />
       <workItem from="1551971203957" duration="613000" />
       <workItem from="1551971838543" duration="2883000" />
-      <workItem from="1552038364167" duration="28315000" />
+      <workItem from="1552038364167" duration="28576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34569000" />
+    <option name="totallyTimeSpent" value="34830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1973" y="-2" width="1867" height="1082" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27237782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -439,12 +418,12 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.40928724" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.40928724" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.3294893" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.3294893" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,20 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/notification_bot/repo.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20190311110640_create_filters.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/notification_bot/user.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -581,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/notification_bot/periodically.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/notification_bot.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -606,6 +564,27 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/notification_bot/repo.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/notification_bot/periodically.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20190311110640_create_filters.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
