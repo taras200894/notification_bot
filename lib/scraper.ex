@@ -1,6 +1,6 @@
 defmodule NotificationBot.Scraper do
-  def get_cars() do
-    case HTTPoison.get("https://www.otomoto.pl/osobowe/renault/megane/od-2014/?search%5Bfilter_float_price%3Afrom%5D=20000&search%5Bfilter_float_price%3Ato%5D=30000&search%5Bfilter_enum_fuel_type%5D%5B0%5D=diesel&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_features%5D%5B0%5D=rear-parking-sensors&search%5Bfilter_enum_no_accident%5D=1&search%5Border%5D=created_at_first%3Adesc&search%5Bbrand_program_id%5D%5B0%5D=&search%5Bcountry%5D=") do
+  def get_cars(filter) do
+    case HTTPoison.get(filter.link) do
       {:ok, response} ->
         case response.status_code do
           200 ->
@@ -9,6 +9,7 @@ defmodule NotificationBot.Scraper do
               |> Floki.find(".offer-item")
               |> Enum.map(&extract_item_information/1)
 
+            check_cars(cars, filter)
             {:ok, cars}
 
           _ -> :error
@@ -22,12 +23,11 @@ defmodule NotificationBot.Scraper do
     |> extract_from_attribute(attrs)
     |> extract_from_children(Floki.raw_html(children))
 
-    IO.inspect(car)
     car
   end
 
   defp extract_from_attribute(car, [{_, id}, _, _, {_, link}]) do
-    %NotificationBot.Car{ car | id: id, link: link }
+    %NotificationBot.Car{ car | number: id, link: link }
   end
 
   defp extract_from_children(car, children) do
@@ -59,7 +59,7 @@ defmodule NotificationBot.Scraper do
     if price_detail =~ "Brutto" do
       price
     else
-      price*1.23
+      Kernel.trunc(price * 1.23)
     end
   end
 
@@ -87,5 +87,36 @@ defmodule NotificationBot.Scraper do
       |> hd()
 
     %NotificationBot.Car{car | location: String.trim(location)}
+  end
+
+  defp check_cars(cars, filter) do
+    for car <- cars do
+      create_and_notify(car, filter)
+    end
+  end
+
+  defp create_and_notify(car, filter) do
+    user = NotificationBot.Repo.get_by(NotificationBot.User, id: filter.user_id)
+    IO.inspect(user)
+    car = %NotificationBot.Car{car | filter_id: filter.id}
+    changeset = NotificationBot.Car.changeset(%NotificationBot.Car{}, Map.from_struct(car))
+
+#    IO.inspect(changeset.changes.number)
+
+    case NotificationBot.Repo.get_by(NotificationBot.Car, number: car.number) do
+      nil ->
+        NotificationBot.Repo.insert(changeset)
+        Telex.send_message(user.telegram_id, generate_string_response(changeset), bot: :notification_bot)
+      car ->
+        {:ok, car}
+    end
+  end
+
+  defp generate_string_response(car) do
+#    car = Map.from_struct(car)
+    IO.inspect(car)
+    response = Enum.map(car.changes, fn {a, i} -> "#{Atom.to_string(a)}: #{i}" end)
+
+    Enum.join(response, ", ")
   end
 end

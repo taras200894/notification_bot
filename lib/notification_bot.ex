@@ -10,8 +10,10 @@ defmodule NotificationBot do
     token = Telex.Config.get(:notification_bot, :token)
 
     children = [
+      NotificationBot.Repo,
       supervisor(Telex, []),
-      supervisor(NotificationBot.Bot, [:polling, token])
+      supervisor(NotificationBot.Bot, [:polling, token]),
+      worker(NotificationBot.Periodically, [])
     ]
 
     opts = [strategy: :one_for_one, name: NotificationBot]

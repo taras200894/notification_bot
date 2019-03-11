@@ -5,6 +5,16 @@ use Mix.Config
 config :notification_bot,
        token: "418662565:AAEsq7ZNj1Xg-A6wJ5kw0Bvn2LhNZDKrmSM"
 
+config :notification_bot,
+       ecto_repos: [NotificationBot.Repo]
+
+config :notification_bot,
+       NotificationBot.Repo,
+       database: "notification_bot_repo",
+       username: "taras",
+       password: "taras",
+       hostname: "localhost"
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
