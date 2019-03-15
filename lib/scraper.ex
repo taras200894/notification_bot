@@ -74,9 +74,8 @@ defmodule NotificationBot.Scraper do
   end
 
   defp find_subtitle(car, children) do
-    { _, _, [subtitle]} =
-      Floki.find(children, ".offer-item__subtitle")
-      |> hd()
+    { _, _, [subtitle]} =  Floki.find(children, ".offer-item__subtitle")
+      if subtitle do: hd(subtitle)
 
     %NotificationBot.Car{car | subtitle: subtitle}
   end
@@ -103,7 +102,7 @@ defmodule NotificationBot.Scraper do
 
 #    IO.inspect(changeset.changes.number)
 
-    case NotificationBot.Repo.get_by(NotificationBot.Car, number: car.number) do
+    case NotificationBot.Repo.get_by(NotificationBot.Car, number: car.number, filter_id: filter.id) do
       nil ->
         NotificationBot.Repo.insert(changeset)
         Telex.send_message(user.telegram_id, generate_string_response(changeset), bot: :notification_bot)

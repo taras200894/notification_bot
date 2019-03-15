@@ -5,7 +5,6 @@ defmodule NotificationBot do
 
   import Supervisor.Spec
 
-
   def start(_type, _args) do
     token = Telex.Config.get(:notification_bot, :token)
 
